@@ -1,0 +1,16 @@
+
+html, body, :global(#root) {
+  height: 100%;
+}
+
+:global(.loadingBar){
+  height: 2px;
+  background-color: #29d;
+  position: absolute;
+  box-shadow: 0 0 2px #29d, 0 0 0px #29d;
+  display: block;
+  width: 100%;
+  left: 0;
+  z-index: 1031;
+
+}

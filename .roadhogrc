@@ -1,0 +1,30 @@
+{
+  "theme": {},
+  "disableCSSModules": false,
+  "extraBabelPlugins": [],
+  "extraPostCSSPlugins": [],
+  "autoprefixer": null,
+  "multipage": true,
+  "extraBabelPlugins": [
+    "transform-runtime",
+    "transform-decorators-legacy",
+    ["import", { "libraryName": "antd", "style": "css" }]
+  ],
+  "proxy": {
+    "**": {
+      "target": "http://127.0.0.1:9999/",
+      "changeOrigin": true
+    }
+  },
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr"
+      ]
+    },
+    "production": {
+      "extraBabelPlugins": [
+      ]
+    }
+  }
+}
