@@ -7,6 +7,13 @@ dva+webpack+multipage
 
 build.js定义分块打包的入口文件及发布路径等等。
 
+## 运行
+
+```bash
+$ npm i
+$ npm start
+```
+
 ## License
 
 [MIT](https://tldrlegal.com/license/mit-license)
