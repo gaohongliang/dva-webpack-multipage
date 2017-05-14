@@ -11,7 +11,6 @@ export default class App extends React.Component {
         <LoadingBar className="loadingBar" />
         <div className={styles.title}>画像配置页面</div>
       </div>
-
     );
   }
 }
