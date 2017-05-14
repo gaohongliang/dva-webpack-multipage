@@ -1,7 +1,7 @@
 
 export default {
 
-  namespace: 'hxzs',
+  namespace: 'page2',
 
   state: {},
 

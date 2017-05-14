@@ -2,7 +2,7 @@
 const path = require('path');
 
 // 工程根目录名，更换项目时修改
-const PROJECT_NAME = 'yhhx';
+const PROJECT_NAME = 'dwm';
 
 const ROOT_PATH = path.resolve(__dirname);
 const PAGES_PATH = path.resolve(ROOT_PATH, 'src/pages');
@@ -13,13 +13,13 @@ const PUBLIC_PATH = `/${PROJECT_NAME}/dist/`;
 // pages增加一个模块配置一个属性
 module.exports = {
   pages: {
-    hxpz: {
-      entry: path.resolve(PAGES_PATH, 'hxpz/hxpz.js'),
-      title: '画像配置',
+    page1: {
+      entry: path.resolve(PAGES_PATH, 'page1/page1.js'),
+      title: 'page1',
     },
-    hxzs: {
-      entry: path.resolve(PAGES_PATH, 'hxzs/hxzs.js'),
-      title: '画像展示',
+    page2: {
+      entry: path.resolve(PAGES_PATH, 'page2/page2.js'),
+      title: 'page2',
     },
   },
   template: TEMPLATE_PATH,

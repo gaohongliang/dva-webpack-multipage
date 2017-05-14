@@ -1,8 +1,8 @@
 import { showLoading, hideLoading } from 'react-redux-loading-bar';
-import { queryEntity } from '../services/hxpzService';
+import { queryEntity } from '../services/page1Service';
 
 export default {
-  namespace: 'hxpz',
+  namespace: 'page1',
   state: {
     entitys: [],
   },
@@ -24,14 +24,14 @@ export default {
   effects: {
     *fetchQueryEntity({ payload, }, { call, put }) { // eslint-disable-line
       try {
-        yield put(showLoading());
+        yield put(showLoading());// 开始顶部进度条
         const { data } = yield call(queryEntity, payload);
         yield put({
           type: 'save',
           payload: { entitys: data },
         });
       } finally {
-        yield put(hideLoading());
+        yield put(hideLoading());// 结束顶部进度条
       }
     },
     // *fetch({ payload }, { call, put }) {  // eslint-disable-line

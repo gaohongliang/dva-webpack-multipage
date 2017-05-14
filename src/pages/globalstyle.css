@@ -2,7 +2,7 @@
 html, body, :global(#root) {
   height: 100%;
 }
-
+/*顶部进度条全局样式*/
 :global(.loadingBar){
   height: 2px;
   background-color: #29d;
