@@ -6,7 +6,7 @@ import styles from './App.css';
 export default class App extends React.Component {
   render = () => {
     return (
-      <div className={styles.title}>画像展示页面</div>
+      <div className={styles.title}>page2</div>
     );
   }
 }
