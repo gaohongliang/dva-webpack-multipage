@@ -163,7 +163,7 @@ module.exports = function (webpackConfig, env) {
         template: build.template,
         inject: true,
         chunks: ['common', name],
-        hash: false,
+        hash: true,
         cache: false,
       }));
     }
